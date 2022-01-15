@@ -12,7 +12,7 @@ namespace Course.Client
        
         private HubConnection _teacherHub { get; set; }
         public HubConnection TeacherHub { get => _teacherHub; }
-        public List<Teacher> Teachers { get; set; } = new();
+        public List<Teacher> Teacherss { get; set; } = new();
         public SRservice(NavigationManager nm)
         {
             _teacherHub = new HubConnectionBuilder().
@@ -28,7 +28,7 @@ namespace Course.Client
 
         }
         public void GettingAllTeachers(List<Teacher> teachers)
-        => Teachers = teachers;
+        => Teacherss = teachers;
         
     }
 }
